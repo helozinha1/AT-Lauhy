@@ -1,0 +1,59 @@
+.sobre {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sobre h1 {
+    color: #e20f71;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.descricao {
+    font-size: 1.1rem;
+    color: #e7779d;
+    margin-bottom: 3.5rem;
+    font-weight: bold;
+}
+
+.missao {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.itens {
+    padding: 30px 20px;
+    background: rgb(243, 156, 189);
+    border-radius: 12px;
+    border-bottom: 5px solid #e4247d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(226, 15, 113, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.itens:hover {
+    transform: translateY(-5px);
+}
+
+.itens svg {
+    font-size: 2.5rem;
+    color: #f0c8d9;
+    margin-bottom: 15px;
+}
+
+.itens h2 {
+    font-size: 1.4rem;
+    color: #7a0035;
+    margin-bottom: 15px;
+}
+
+.itens p {
+    font-size: 1rem;
+    color: #7a0035;
+    line-height: 1.5;
+}
