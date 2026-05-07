@@ -1,28 +1,54 @@
 import Card from '../../components/Card/Card';
 import styles from './Home.module.css';
+import Banner from '../../components/Banner/Banner';
+import Tania from '../../assets/maedoneilsondecolar.png';
+import Elica from '../../assets/maedokraycolar.png';
+import Elizete from '../../assets/maedodavicolar.png';
 
 function Home() {
-    const cards = [
-        { id: 1, title: 'Qualidade', description: 'Melhores serviços do mercado.' },
-        { id: 2, title: 'Preço', description: 'Valores que cabem no seu bolso.' },
-        { id: 3, title: 'Suporte', description: 'Atendimento 24 horas por dia.' },
+    const joias = [
+        {
+            id: 1,
+            titulo: 'Etcetera’s Burmese Ruby Necklace',
+            preco: 'R$ 31.954.560,00',
+            imagem: Tania,
+        },
+        {
+            id: 2,
+            titulo: 'Pingente Medalha Flor de Lótus em Ouro Amarelo 18k com Topázio Incolor, 7mm',
+            preco: 'R$ 10.500,00',
+            imagem: Elica,
+        },
+        {
+            id: 3,
+            titulo: 'Colar Capri em Prata 925 e Ouro Amarelo 18k com Diamantes 0,4 ct',
+            preco: 'R$ 36.550,00',
+            imagem: Elizete,
+        },
     ];
 
     return (
-        <div className={styles.homeContainer}>
-            <div className={styles.banner}>
-                <h1>Bem-vindo à Lauhy Joias!</h1>
-                <p>
-                    Explore nossa coleção de joias exclusivas e encontre a peça perfeita para você.
-                </p>
-            </div>
+        <>
+            <Banner />
+            <div className={styles.homeContainer}>
+                <div className={styles.carrosselFalso}>
+                    <button className={styles.seta}>&lt;</button>
 
-            <div className={styles.cardsGrid}>
-                {cards.map((card) => (
-                    <Card key={card.id} title={card.title} description={card.description} />
-                ))}
+                    <div className={styles.cardsGrid}>
+                        {joias.map((joia) => (
+                            <Card
+                                key={joia.id}
+                                titulo={joia.titulo}
+                                preco={joia.preco}
+                                imagem={joia.imagem}
+                            />
+                        ))}
+                    </div>
+
+                    <button className={styles.seta}>&gt;</button>
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 

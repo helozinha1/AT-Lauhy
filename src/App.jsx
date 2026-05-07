@@ -9,11 +9,12 @@ import Extra from './pages/Extra/Extra'
 import NotFound from './pages/NotFound/NotFound'
 import Produtos from './pages/Produtos/Produtos'
 
+
 import './App.css'
 
 
 function App() {
- 
+
 
   return (
     <>
@@ -27,11 +28,11 @@ function App() {
             <Route path="/produtos" element={<Produtos />} />
             <Route path="/extra" element={<Extra />} />
             <Route path="*" element={<NotFound />} />
-          </Routes>
+                  </Routes>
         </main>
         <Footer />
       </BrowserRouter>
-      
+
     </>
   )
 }

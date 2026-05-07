@@ -1,20 +1,45 @@
 .card {
-    background-color: rgb(255, 221, 227);
-    padding: 60px 40px;
-    border-radius: 50px;
-    box-shadow: 0 10px 25px rgba(150, 17, 17, 0.15);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1.5px solid #850c48;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    border: 3px solid transparent;
-    background-image: linear-gradient(rgb(255, 221, 227), rgb(255, 221, 227)),
-                      linear-gradient(145deg, #790d43, #e6618d, #d6658b, #850c48);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-
-    min-height: 350px;
-    justify-content: center;
-    box-sizing: border-box;
     width: 100%;
+    min-height: 400px;
+    justify-content: space-between;
+}
+
+.containerImagem {
+    width: 100%;
+    height: 250px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemProduto {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.informacoes {
+    text-align: left;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #333;
+    margin: 10px 0;
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #000;
 }

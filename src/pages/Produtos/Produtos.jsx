@@ -1,6 +1,6 @@
 import styles from './Produto.module.css';
 import { pulseira1, pulseira2, colar1, colar2, anel1, anel2 } from '../../assets';
-import { FaHeart, FaCartPlus } from 'react-icons/fa'; 
+import { FaHeart, FaCartPlus } from 'react-icons/fa';
 
 
 function Produtos() {
@@ -32,7 +32,7 @@ function Produtos() {
                             <button className={styles.carrinhoButton}><FaCartPlus /></button>
                         </div>
                     </div>
-                    
+
                 ))}
             </div>
         </div>
@@ -40,4 +40,3 @@ function Produtos() {
 }
 
 export default Produtos;
-        
