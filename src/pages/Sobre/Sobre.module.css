@@ -6,14 +6,14 @@
 }
 
 .sobre h1 {
-    color: #e20f71;
+    color: #db5280;
     margin-bottom: 10px;
     font-size: 2.5rem;
 }
 
 .descricao {
     font-size: 1.1rem;
-    color: #e7779d;
+    color: #db5280;
     margin-bottom: 3.5rem;
     font-weight: bold;
 }
@@ -26,14 +26,19 @@
 
 .itens {
     padding: 30px 20px;
-    background: rgb(243, 156, 189);
-    border-radius: 12px;
-    border-bottom: 5px solid #e4247d;
+    background: rgb(255, 221, 227);
+    border-radius: 40px;
+    border-bottom: 5px solid rgb(218, 84, 135);
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 10px rgba(226, 15, 113, 0.15);
     transition: transform 0.3s ease;
+     border: 3px solid transparent;
+    background-image: linear-gradient(rgb(255, 221, 227), rgb(255, 221, 227)),
+                      linear-gradient(145deg, #790d43, #e6618d, #d6658b, #850c48);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 
 .itens:hover {
@@ -42,7 +47,7 @@
 
 .itens svg {
     font-size: 2.5rem;
-    color: #f0c8d9;
+    color: #fcecf3;
     margin-bottom: 15px;
 }
 
